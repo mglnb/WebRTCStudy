@@ -1,5 +1,16 @@
+html {
+    display: flex;
+}
 body {
     text-align: center;
     font-size: 1em;
     font-family: sans-serif;
+    width: 100vw;
+}
+body div {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
