@@ -1,1 +1,0 @@
-## Projeto do Curso "Learn Javascript from Scratch"
