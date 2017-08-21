@@ -19,10 +19,9 @@ connection.onstream = function(event) {
   
 }
 
-var roomid = document.getElementById("roomId").value;
+var roomid = document.getElementById("roomId");
 roomid.value = connection.token();
 
 document.getElementById('submit').onclick = function() {
-
   connection.openOrJoin(roomid.value);
 }
