@@ -15,7 +15,8 @@ const drone = new ScaleDrone('63o6Zfoz6yeAcJDG');
 const roomName = 'observable-' + roomHash;
 const configuration = {
   iceServers: [{
-    urls: 'stun:stun.l.google.com:19302'
+    urls: 'stun:stun.l.google.com:19302',
+    url: "turn:numb.viagenie.ca", credential: "91533266", username: "mgl.deadly%40gmail.com"
   }]
 };
 let room;
