@@ -16,7 +16,7 @@ const roomName = 'observable-' + roomHash;
 const configuration = {
   iceServers: [{
     urls: 'stun:stun.l.google.com:19302',
-    url: "turn:numb.viagenie.ca", credential: "", username: "mgl.deadly%40gmail.com"
+    url: "turn:numb.viagenie.ca", credential: "91533266", username: "mgl.deadly%40gmail.com"
   }]
 };
 let room;
