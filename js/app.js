@@ -37,7 +37,7 @@ var room = prompt('Digite o numero da sala');
 // Could prompt for room name:
 // room = prompt('Enter room name:');
 
-var socket = io.connect();
+var socket = io.connect('https://enigmatic-beyond-43618.herokuapp.com/');
 
 if (room !== '') {
   socket.emit('create or join', room);
@@ -221,7 +221,7 @@ function onCreateSessionDescriptionError(error) {
 function requestTurn(turnURL) {
   var turnExists = false;
   for (var i in pcConfig.iceServers) {
-    if (pcConfig.iceServers[i].url.substr(0, 5) === 'turn:') {
+    if (pcConfig.iceServers[i].urls.substr(0, 5) === 'turn:') {
       turnExists = true;
       turnReady = true;
       break;
