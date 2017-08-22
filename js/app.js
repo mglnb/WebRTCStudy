@@ -10,15 +10,14 @@ var turnReady;
 
 var pcConfig = {
   'iceServers': [{
-      'urls': [
+      'url': [
         'turn:webrtcweb.com:7788', // coTURN 7788+8877
-        'turn:webrtcweb.com:4455' // restund 4455+5544
       ],
       'username': 'muazkh',
       'credential': 'muazkh'
     },
     {
-      'urls': [
+      'url': [
         'stun:stun.l.google.com:19302'
       ]
     }
@@ -221,7 +220,7 @@ function onCreateSessionDescriptionError(error) {
 function requestTurn(turnURL) {
   var turnExists = false;
   for (var i in pcConfig.iceServers) {
-    if (pcConfig.iceServers[i].urls.substr(0, 5) === 'turn:') {
+    if (pcConfig.iceServers[i].url.substr(0, 5) === 'turn:') {
       turnExists = true;
       turnReady = true;
       break;
