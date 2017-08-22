@@ -37,7 +37,7 @@ var room = prompt('Digite o numero da sala');
 // Could prompt for room name:
 // room = prompt('Enter room name:');
 
-var socket = io.connect();
+var socket = io.connect('https://enigmatic-beyond-43618.herokuapp.com/');
 
 if (room !== '') {
   socket.emit('create or join', room);
